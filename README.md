@@ -98,7 +98,7 @@ void loop()
 // Function returns float since HC-SR04 can measure partial centimeters
 float readDistance()
 {
-    unsigned long currentTime = millis(); // "mills"是什么意思？
+    unsigned long currentTime = millis(); 
     
     // Only read sensor if interval has elapsed
     if (currentTime - lastSensorRead >= sensorInterval)
